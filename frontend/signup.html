@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | OpportunityBoard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
     
-</body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">OpportunityBoard</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Browse</a></li>
+          <li><a href="post-opportunity.html">Post</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html" class="btn-primary active">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
+    <main class="page-wrapper auth-page">
+
+      <section class="auth-card">
+
+        <div class="auth-header">
+          <h1>Create your account</h1>
+          <p>Join thousands of students discovering opportunities every day.</p>
+        </div>
+
+        <form class="auth-form" action="#" method="POST" novalidate>
+
+          
+          <div class="form-group">
+            <label for="signup-name">Full Name <span class="required">*</span></label>
+            <input
+              type="text"
+              id="signup-name"
+              name="full_name"
+              placeholder="Riya Sharma"
+              autocomplete="name"
+              required
+            />
+            
+          </div>
+          <br>
+
+          
+          <div class="form-group">
+            <label for="signup-email">Email address <span class="required">*</span></label>
+            <input
+              type="email"
+              id="signup-email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+            
+          </div>
+          <br>
+
+          
+          <div class="form-group">
+            <label for="signup-password">Password <span class="required">*</span></label>
+            <input
+              type="password"
+              id="signup-password"
+              name="password"
+              placeholder="Min. 8 characters"
+              autocomplete="new-password"
+              required
+              minlength="8"
+            />
+          </div>
+          <br>
+
+          
+          <div class="form-group">
+            <label for="signup-confirm">Confirm Password <span class="required">*</span></label>
+            <input
+              type="password"
+              id="signup-confirm"
+              name="confirm_password"
+              placeholder="Re-enter your password"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+          <br>
+
+          
+          <div class="form-group form-group--checkbox">
+            <input type="checkbox" id="signup-terms" name="terms" required />
+            <label for="signup-terms">
+              I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <br>
+
+          <button type="submit" class="btn-primary btn-full">Create Account</button>
+
+        </form>
+
+        
+        <div class="auth-divider">
+          <span>or</span>
+        </div>
+
+        
+        <button type="button" class="btn-oauth btn-full">
+          Continue with Google
+        </button>
+
+        
+        <p class="auth-switch">
+          Already have an account?
+          <a href="login.html">Log in here</a>
+        </p>
+
+      </section>
+
+    </main>
+
+    
+    <footer class="site-footer">
+      <p>&copy;  OpportunityBoard. Built for students, by students.</p>
+    </footer>
+
+  </body>
 </html>

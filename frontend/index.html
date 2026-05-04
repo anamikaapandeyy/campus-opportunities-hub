@@ -1,54 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opportunity Finder</title>
-</head>
-<body>
-    <nav>
-        <strong>OpporTune</strong>
-        <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="post-opportunity.html">Post an Opportunity</a></li>
-        </ul>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpporTune | Find Your Next Opportunity</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+
+    
     <header>
-        <h1>Find Your Next Opportunity</h1>
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">OpporTune</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Browse</a></li>
+          <li><a href="post-opportunity.html">Post</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
+        </ul>
+      </nav>
     </header>
-    <section id="filters">
-        <button type="button">All</button>
-        <button type="button">Hackathons</button>
-        <button type="button">Internships</button>
-        <button type="button">Events</button>
 
+    
+    <section class="hero">
+      <h1>Find Your Next Opportunity</h1>
+      <p class="hero-subtitle">
+        Hackathons, internships, and events — curated for college students.
+        No noise, just signal.
+      </p>
     </section>
-    <main id="listings">
-        
-        <article>
-            <h3>Summer Engineering Internship</h3>
-            <p>Type: Internship</p>
-            <span>Date: June 2026</span>
-            <br>
-            <a href="opportunity-details.html">View Details</a>
-        </article>
 
-        <article>
-            <h3>Global AI Hackathon</h3>
-            <p>Type: Hackathon</p>
-            <span>Date: Oct 2026</span>
-            <br>
-            <a href="opportunity-details.html">View Details</a>
-        </article>
+    
+    <section class="filters" id="filters">
+      <button class="filter-btn filter-btn--active" type="button" data-filter="all">All</button>
+      <button class="filter-btn" type="button" data-filter="hackathon">Hackathons</button>
+      <button class="filter-btn" type="button" data-filter="internship">Internships</button>
+      <button class="filter-btn" type="button" data-filter="event">Events</button>
+    </section>
 
-        <article>
-            <h3>Product Design Fellowship</h3>
-            <p>Type: Internship</p>
-            <span>Date: Sept 2026</span>
-            <br>
-            <a href="opportunity-details.html">View Details</a>
-        </article>
+    
+    <main class="listings-grid" id="listings">
+
+      
+      <article class="opportunity-card" data-category="internship">
+        <div class="card-header">
+          <span class="badge badge--internship">Internship</span>
+          <span class="card-date">June 2026</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Summer Engineering Internship</h3>
+          <p class="card-description">
+            A 10-week hands-on internship at a product-based company. Work on
+            real features, get mentored, and build your portfolio.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="card-meta">📍 Remote</span>
+          <a href="opportunity-details.html" class="btn-outline">View Details</a>
+        </div>
+      </article>
+
+      
+      <article class="opportunity-card" data-category="hackathon">
+        <div class="card-header">
+          <span class="badge badge--hackathon">Hackathon</span>
+          <span class="card-date">Oct 2026</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Global AI Hackathon</h3>
+          <p class="card-description">
+            48-hour online hackathon focused on building AI-powered solutions.
+            Open to all students. ₹1L prize pool.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="card-meta">📍 Online</span>
+          <a href="opportunity-details.html" class="btn-outline">View Details</a>
+        </div>
+      </article>
+
+      
+      <article class="opportunity-card" data-category="internship">
+        <div class="card-header">
+          <span class="badge badge--internship">Internship</span>
+          <span class="card-date">Sept 2026</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Product Design Fellowship</h3>
+          <p class="card-description">
+            A 3-month fellowship for aspiring product designers. Learn
+            Figma, user research, and ship real designs with a startup team.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="card-meta">📍 Bangalore, IN</span>
+          <a href="opportunity-details.html" class="btn-outline">View Details</a>
+        </div>
+      </article>
+
+      
+      <article class="opportunity-card" data-category="event">
+        <div class="card-header">
+          <span class="badge badge--event">Event</span>
+          <span class="card-date">Aug 2026</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Google Developer Student Fest</h3>
+          <p class="card-description">
+            A one-day tech fest featuring talks, workshops, and networking
+            sessions with engineers from Google and partner companies.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="card-meta">📍 Delhi, IN</span>
+          <a href="opportunity-details.html" class="btn-outline">View Details</a>
+        </div>
+      </article>
+
+      
+      <article class="opportunity-card" data-category="hackathon">
+        <div class="card-header">
+          <span class="badge badge--hackathon">Hackathon</span>
+          <span class="card-date">July 2026</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Smart India Hackathon 2026</h3>
+          <p class="card-description">
+            India's biggest national hackathon for students. Solve government
+            problem statements. ₹1,00,000 prize per winning team.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="card-meta">📍 Multiple Cities, IN</span>
+          <a href="opportunity-details.html" class="btn-outline">View Details</a>
+        </div>
+      </article>
+
+      
+      <article class="opportunity-card" data-category="event">
+        <div class="card-header">
+          <span class="badge badge--event">Event</span>
+          <span class="card-date">Nov 2026</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Campus Founders Summit</h3>
+          <p class="card-description">
+            A two-day summit bringing together student founders, investors,
+            and mentors. Pitch your idea and win incubation support.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="card-meta">📍 Mumbai, IN</span>
+          <a href="opportunity-details.html" class="btn-outline">View Details</a>
+        </div>
+      </article>
 
     </main>
-</body>
+
+    
+    <footer class="site-footer">
+      <p>&copy;  OpporTune. Built for students, by students.</p>
+    </footer>
+
+  </body>
 </html>
