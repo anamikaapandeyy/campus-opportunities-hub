@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saved | OpporTune</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+
     
-</body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">OpporTune</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Browse</a></li>
+          <li><a href="post-opportunity.html">Post</a></li>
+          <li><a href="saved.html" class="active">Saved</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
+    <section class="page-hero">
+      <h1>Your Saved Items</h1>
+      <p class="hero-subtitle">Bookmarked opportunities and your unfinished drafts — all in one place.</p>
+    </section>
+
+    <main class="page-wrapper saved-page">
+
+      
+      <div class="tabs">
+        <button class="tab-btn tab-btn--active" type="button" data-tab="bookmarks">
+          🔖 Bookmarks <span class="tab-count">3</span>
+        </button>
+        <button class="tab-btn" type="button" data-tab="drafts">
+          📝 Drafts <span class="tab-count">2</span>
+        </button>
+      </div>
+
+      
+      <section class="tab-panel" id="tab-bookmarks">
+
+        <div class="listings-grid">
+
+          
+          <article class="opportunity-card" data-category="hackathon">
+            <div class="card-header">
+              <span class="badge badge--hackathon">Hackathon</span>
+              <span class="card-date">July 2026</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Smart India Hackathon 2026</h3>
+              <p class="card-description">
+                India's biggest national hackathon for students. Solve government
+                problem statements. ₹1,00,000 prize per winning team.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="card-meta">📍 Multiple Cities, IN</span>
+              <div class="card-actions">
+                <button class="btn-icon" type="button" title="Remove bookmark">🔖</button>
+                <a href="opportunity-details.html" class="btn-outline">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="opportunity-card" data-category="internship">
+            <div class="card-header">
+              <span class="badge badge--internship">Internship</span>
+              <span class="card-date">June 2026</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Summer Engineering Internship</h3>
+              <p class="card-description">
+                A 10-week hands-on internship at a product-based company. Work on
+                real features, get mentored, and build your portfolio.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="card-meta">📍 Remote</span>
+              <div class="card-actions">
+                <button class="btn-icon" type="button" title="Remove bookmark">🔖</button>
+                <a href="opportunity-details.html" class="btn-outline">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="opportunity-card" data-category="event">
+            <div class="card-header">
+              <span class="badge badge--event">Event</span>
+              <span class="card-date">Aug 2026</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Google Developer Student Fest</h3>
+              <p class="card-description">
+                A one-day tech fest featuring talks, workshops, and networking
+                sessions with engineers from Google and partner companies.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="card-meta">📍 Delhi, IN</span>
+              <div class="card-actions">
+                <button class="btn-icon" type="button" title="Remove bookmark">🔖</button>
+                <a href="opportunity-details.html" class="btn-outline">View Details</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
+
+      
+      <section class="tab-panel tab-panel--hidden" id="tab-drafts">
+
+        <div class="drafts-list">
+
+         
+          <article class="draft-card">
+            <div class="draft-card-left">
+              <span class="badge badge--hackathon">Hackathon</span>
+              <div class="draft-info">
+                <h3 class="draft-title">Build for Bharat Hackathon</h3>
+                <p class="draft-meta">Last edited: May 3, 2026 · Deadline not set</p>
+              </div>
+            </div>
+            <div class="draft-card-right">
+              <div class="draft-progress">
+                <span class="progress-label">4 of 6 fields filled</span>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 66%;"></div>
+                </div>
+              </div>
+              <div class="draft-actions">
+                <a href="post-opportunity.html" class="btn-outline">Continue Editing</a>
+                <button class="btn-icon btn-icon--danger" type="button" title="Delete draft">🗑️</button>
+              </div>
+            </div>
+          </article>
+
+         
+          <article class="draft-card">
+            <div class="draft-card-left">
+              <span class="badge badge--internship">Internship</span>
+              <div class="draft-info">
+                <h3 class="draft-title">Untitled Internship Post</h3>
+                <p class="draft-meta">Last edited: Apr 28, 2026 · No deadline</p>
+              </div>
+            </div>
+            <div class="draft-card-right">
+              <div class="draft-progress">
+                <span class="progress-label">1 of 6 fields filled</span>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 16%;"></div>
+                </div>
+              </div>
+              <div class="draft-actions">
+                <a href="post-opportunity.html" class="btn-outline">Continue Editing</a>
+                <button class="btn-icon btn-icon--danger" type="button" title="Delete draft">🗑️</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
+
+
+    </main>
+
+    
+    <footer class="site-footer">
+      <p>&copy; OpporTune. Built for students, by students.</p>
+    </footer>
+
+  </body>
 </html>
